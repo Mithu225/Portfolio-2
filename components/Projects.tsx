@@ -11,9 +11,6 @@ export default function Projects() {
           <div className="w-full px-[12px]">
             <div
               className="bix-banner mb-[30px] flex justify-center text-center max-[1199px]:mb-[25px] max-[767px]:mb-[20px]"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="400"
             >
               <h4 className="font-montserrat text-[36px] font-bold text-[#111a24] tracking-[0.03rem] leading-[1.2] max-[1199px]:text-[32px] max-[767px]:text-[28px] max-[575px]:text-[24px]">
                 Featured <span className="text-[#f41a4a]">Projects</span>
@@ -21,9 +18,6 @@ export default function Projects() {
             </div>
             <div
               className="bix-banner-line mb-[110px]"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="600"
             >
               <span className="inner-border relative flex justify-center"></span>
             </div>
@@ -55,14 +49,14 @@ export default function Projects() {
                         href="/projects/project-one"
                         className="transition-all duration-[0.3s] ease-in-out font-montserrat leading-[26px] tracking-[0.03rem] text-[18px] max-[1399px]:text-[17px] font-semibold text-[#111a24] hover:text-[#f41a4a]"
                       >
-                        Project One
+                        Semester Project
                       </a>
                     </h5>
                     <span className="font-montserrat font-normal leading-[26px] tracking-[0.02rem] text-[14px] max-[1399px]:text-[14px] text-[#999]">
-                      Web Development
+                      An auction website
                     </span>
                     <p className="mt-[4px] font-montserrat text-[14px] font-normal tracking-[0.03rem] leading-[22px] text-[#495461]">
-                      A modern web application built with React and Node.js.
+                      A modern website built with HTML, Tailwind, Javascript.
                       <a
                         href="/projects/project-one"
                         className="text-[#111a24] inline-flex font-medium font-montserrat text-[14px] leading-[26px] tracking-[0.03rem]"
@@ -84,7 +78,7 @@ export default function Projects() {
                     >
                       <div className="overlay-project-card transition-all duration-[0.3s] ease-in-out opacity-[0] w-[calc(100%-60px)] h-[calc(100%-30px)] absolute top-[0] right-[30px] rounded-[30px] flex items-center justify-center bg-[#00000080] z-[45] overflow-hidden max-[480px]:p-[0] max-[480px]:w-[calc(100%-40px)] max-[480px]:h-[calc(100%-20px)] max-[480px]:top-[0] max-[480px]:bottom-[0] max-[480px]:right-[20px] max-[480px]:left-[20px]"></div>
                       <Image
-                        src="/images/project2.jpg"
+                        src="/images/Javascript Frameworks-project2.png"
                         alt="Project 2"
                         width={400}
                         height={300}
@@ -98,14 +92,15 @@ export default function Projects() {
                         href="/projects/project-two"
                         className="transition-all duration-[0.3s] ease-in-out font-montserrat leading-[26px] tracking-[0.03rem] text-[18px] max-[1399px]:text-[17px] font-semibold text-[#111a24] hover:text-[#f41a4a]"
                       >
-                        Project Two
+                        Javascript Frameworks
                       </a>
                     </h5>
                     <span className="font-montserrat font-normal leading-[26px] tracking-[0.02rem] text-[14px] max-[1399px]:text-[14px] text-[#999]">
-                      Mobile App
+                      E-commerce website
                     </span>
                     <p className="mt-[4px] font-montserrat text-[14px] font-normal tracking-[0.03rem] leading-[22px] text-[#495461]">
-                      A cross-platform mobile application using React Native.
+                      An e-commerce web application built using HTML,Tailwind
+                      and Next.js.
                       <a
                         href="/projects/project-two"
                         className="text-[#111a24] inline-flex font-medium font-montserrat text-[14px] leading-[26px] tracking-[0.03rem]"
@@ -127,7 +122,7 @@ export default function Projects() {
                     >
                       <div className="overlay-project-card transition-all duration-[0.3s] ease-in-out opacity-[0] w-[calc(100%-60px)] h-[calc(100%-30px)] absolute top-[0] right-[30px] rounded-[30px] flex items-center justify-center bg-[#00000080] z-[45] overflow-hidden max-[480px]:p-[0] max-[480px]:w-[calc(100%-40px)] max-[480px]:h-[calc(100%-20px)] max-[480px]:top-[0] max-[480px]:bottom-[0] max-[480px]:right-[20px] max-[480px]:left-[20px]"></div>
                       <Image
-                        src="/images/project3.jpg"
+                        src="/images/Project Exam - Holidaze-project3.jpg"
                         alt="Project 3"
                         width={400}
                         height={300}
@@ -141,15 +136,14 @@ export default function Projects() {
                         href="/projects/project-three"
                         className="transition-all duration-[0.3s] ease-in-out font-montserrat leading-[26px] tracking-[0.03rem] text-[18px] max-[1399px]:text-[17px] font-semibold text-[#111a24] hover:text-[#f41a4a]"
                       >
-                        Project Three
+                        Project Exam
                       </a>
                     </h5>
                     <span className="font-montserrat font-normal leading-[26px] tracking-[0.02rem] text-[14px] max-[1399px]:text-[14px] text-[#999]">
-                      UI/UX Design
+                      Booking website
                     </span>
                     <p className="mt-[4px] font-montserrat text-[14px] font-normal tracking-[0.03rem] leading-[22px] text-[#495461]">
-                      A beautiful user interface design for a modern web
-                      application.
+                      A booking site built with HTML, Next.js, Tailwind, TypeScript.
                       <a
                         href="/projects/project-three"
                         className="text-[#111a24] inline-flex font-medium font-montserrat text-[14px] leading-[26px] tracking-[0.03rem]"

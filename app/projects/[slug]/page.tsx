@@ -3,43 +3,56 @@ import ProjectArticle from "@/components/ProjectArticle";
 // This would typically come from a database or CMS
 const projectData = {
   "project-one": {
-    title: "Project One",
-    description: `This is a detailed description of Project One. It can span multiple paragraphs.
+    title: "Semester Project",
+    description: `Auction Site A web application where users can add items to be bid on and bid on items that other users have put up for auction. This project is being developed by me.
 
-The project was developed using modern web technologies and follows best practices in software development.
-
-Key features include:
-- Feature 1
-- Feature 2
-- Feature 3`,
+Built With
+- HTML
+- Tailwind
+- SCSS
+- JavaScript
+- Design applications: Figma
+- Planning applications: GitHub Projects
+- Noroff API`,
     imageUrl: "/images/Semester Project - bStorm-project1.png",
-    imageCaption: "Project One - Main Interface",
+    imageCaption: "Semester Project - bStorm",
+    githubUrl: "https://github.com/Mithu225/semester-project2-bstorm",
+    liveUrl: "https://bstorm.thuhuynh.no/",
   },
   "project-two": {
-    title: "Project Two",
-    description: `This is a detailed description of Project Two. It can span multiple paragraphs.
+    title: "Javascript Frameworks",
+    description: `This is a e-commerce site. Zipshop is a modern, responsive e-commerce web application built using Next.js, Tailwind CSS, and other cutting-edge technologies. It offers a seamless shopping experience with a user-friendly interface, shopping cart functionality, and secure checkout.
 
-The project was developed using modern web technologies and follows best practices in software development.
-
-Key features include:
-- Feature 1
-- Feature 2
-- Feature 3`,
-    imageUrl: "/images/project2.jpg",
-    imageCaption: "Project Two - Mobile App Screenshot",
+Built With
+- HTML
+- Tailwind
+- SCSS
+- Next.js
+- Design applications: Figma
+- Planning applications: GitHub Projects
+- Noroff API`,
+    imageUrl: "/images/Javascript Frameworks-project2.png",
+    imageCaption: "Javascript Frameworks - Main Interface",
+    githubUrl: "https://github.com/Mithu225/zipshop-javascript-frameworks",
+    liveUrl: "https://zipshop.thuhuynh.no/",
   },
   "project-three": {
-    title: "Project Three",
-    description: `This is a detailed description of Project Three. It can span multiple paragraphs.
+    title: "Project Exam",
+    description: `This is a booking site. Holidaze is a modern web application built with Next.js that helps users find and book holiday accommodations. Whether you're looking for a cozy cabin in the woods or a beachfront villa, Holidaze makes it easy to discover and book your perfect holiday stay.
 
-The project was developed using modern web technologies and follows best practices in software development.
-
-Key features include:
-- Feature 1
-- Feature 2
-- Feature 3`,
-    imageUrl: "/images/project3.jpg",
-    imageCaption: "Project Three - UI/UX Design",
+Built With
+- HTML
+- Tailwind
+- SCSS
+- Next.js
+- TypeScript
+- Design applications: Figma
+- Planning applications: GitHub Projects
+- Noroff API`,
+    imageUrl: "/images/Project Exam - Holidaze-project3.jpg",
+    imageCaption: "Project Exam - Main Interface",
+    githubUrl: "https://github.com/Mithu225/Project-Exam-2---holidaze",
+    liveUrl: "https://holidaze.thuhuynh.no/",
   },
 };
 
@@ -56,6 +69,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       description={project.description}
       imageUrl={project.imageUrl}
       imageCaption={project.imageCaption}
+      githubUrl={project.githubUrl}
+      liveUrl={project.liveUrl}
     />
   );
 }
