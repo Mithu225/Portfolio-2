@@ -39,7 +39,10 @@ export default function Introduction() {
   }, [charIndex, isDeleting, textIndex]);
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white relative w-full">
+    <section
+      id="home"
+      className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white relative w-full"
+    >
       <StarfishClipPath />
 
       <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl mx-auto gap-12 md:gap-20 px-4 py-12">

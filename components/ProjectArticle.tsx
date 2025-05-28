@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 interface ProjectArticleProps {
   title: string;
@@ -30,6 +31,18 @@ export default function ProjectArticle({
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-8">
+      {/* Back Button */}
+      <div className="mb-8">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 px-4 py-2 text-[#495461] hover:text-[#f41a4a] transition-all duration-300 bg-gray-50 rounded-lg hover:bg-gray-100"
+          aria-label="Go back"
+        >
+          <i className="ri-arrow-left-line text-xl"></i>
+          <span className="font-medium">← Back</span>
+        </Link>
+      </div>
+
       {/* Title Section */}
       <div className="mb-8">
         <h1 className="text-4xl font-bold text-[#111a24] mb-6 font-montserrat">

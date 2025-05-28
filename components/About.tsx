@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="section-about relative py-[50px] max-[991px]:py-[40px] max-[767px]:py-[35px]">
+    <section
+      id="about"
+      className="section-about relative py-[50px] max-[991px]:py-[40px] max-[767px]:py-[35px]"
+    >
       <div className="container flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
         <div className="flex flex-wrap w-full mb-[-30px]">
           <div className="w-full px-[12px]">
@@ -17,7 +20,7 @@ export default function About() {
               </h4>
             </div>
             <div
-              className="bix-banner-line mb-[110px]"
+              className="bix-banner-line mb-4"
               data-aos="fade-up"
               data-aos-duration="2000"
               data-aos-delay="600"
@@ -26,12 +29,7 @@ export default function About() {
             </div>
           </div>
 
-          <div
-            className="max-[1199px]:order-2 min-[1200px]:w-[33.33%] min-[992px]:w-[50%] w-full px-[12px] mb-[30px]"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="400"
-          >
+          <div className="max-[1199px]:order-2 min-[1200px]:w-[33.33%] min-[992px]:w-[50%] w-full px-[12px] mb-[30px]">
             <div className="bix-about-contact h-full flex flex-col justify-center">
               <h5 className="mb-[24px] font-montserrat text-[37px] font-bold text-grey-500 tracking-[0.08rem] opacity-[0.5] leading-[1.2] max-[1399px]:text-[32px] max-[1199px]:text-[28px] max-[575px]:text-[28px] max-[420px]:text-[22px]">
                 "Creativity bleeds from the pen of inspiration."
@@ -57,10 +55,7 @@ export default function About() {
             </div>
           </div>
 
-          <div
-            className="max-[1199px]:order-1 min-[1200px]:w-[33.33%] min-[992px]:w-[100%] w-full px-[12px] mb-[30px]"
-            
-          >
+          <div className="max-[1199px]:order-1 min-[1200px]:w-[33.33%] min-[992px]:w-[100%] w-full px-[12px] mb-[30px]">
             <div className="bix-about-img border-[1px] border-solid border-[#111a24] p-[15px] rounded-[200px] relative max-[1199px]:max-w-fit max-[1199px]:m-auto">
               <Image
                 src="/images/thuhuynh2.jpg"
@@ -105,9 +100,7 @@ export default function About() {
               className="bix-skill h-full flex flex-col justify-center max-[1199px]:h-auto"
               id="progress"
             >
-              
-              <div
-                className="skill-inner-box mb-[24px] p-[20px] flex flex-col relative rounded-[100px] max-[420px]:rounded-[50px] bg-[#faf1c6]">
+              <div className="skill-inner-box mb-[24px] p-[20px] flex flex-col relative rounded-[100px] max-[420px]:rounded-[50px] bg-[#faf1c6]">
                 <div className="skill-contact inline-flex flex-wrap max-[420px]:flex-col justify-center items-center">
                   <div className="skill-box-contact w-[calc(100%-90px)] p-[10px] flex flex-col justify-center max-[420px]:w-full">
                     <h4 className="font-montserrat text-[16px] font-semibold text-[#111a24] mb-[8px] tracking-[0.03rem] leading-[1.2]">
@@ -134,11 +127,7 @@ export default function About() {
                 </div>
               </div>
 
-              
-              <div
-                className="skill-inner-box mb-[24px] p-[20px] flex flex-col relative rounded-[100px] max-[420px]:rounded-[50px] bg-[#ffd5df]"
-               
-              >
+              <div className="skill-inner-box mb-[24px] p-[20px] flex flex-col relative rounded-[100px] max-[420px]:rounded-[50px] bg-[#ffd5df]">
                 <div className="skill-contact inline-flex flex-wrap max-[420px]:flex-col justify-center">
                   <div className="skill-box-contact w-[calc(100%-90px)] p-[10px] flex flex-col justify-center max-[420px]:w-full">
                     <h4 className="font-montserrat text-[16px] font-semibold text-[#111a24] mb-[8px] tracking-[0.03rem] leading-[1.2]">
@@ -158,7 +147,6 @@ export default function About() {
                 </div>
               </div>
 
-              
               <div className="skill-inner-box mb-[24px] p-[20px] flex flex-col  relative rounded-[100px] max-[420px]:rounded-[50px] bg-[#d5f5ff]">
                 <div className="skill-contact inline-flex flex-wrap max-[420px]:flex-col justify-center">
                   <div className="skill-box-contact w-[calc(100%-90px)] p-[10px] flex flex-col justify-center max-[420px]:w-full">

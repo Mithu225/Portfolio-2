@@ -1,4 +1,23 @@
+"use client";
+
+import { useCallback } from "react";
+
 export default function Header() {
+  const scrollToSection = useCallback((sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerHeight = 100; // Approximate header height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  }, []);
+
   return (
     <header className="transition-all duration-[0.3s] ease-in-out py-[30px] fixed top-[0] right-[0] left-[0] z-[20] bix-static">
       <div className="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
@@ -22,39 +41,31 @@ export default function Header() {
               >
                 <ul className="navbar-nav bix-menu m-[0] pl-[0] flex flex-wrap min-[992px]:flex-row">
                   <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
-                    <a
-                      className="nav-link transition-all duration-[0.3s] ease-in-out font-montserrat tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[#f41a4a]"
-                      href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#home"
+                    <button
+                      onClick={() => scrollToSection("home")}
+                      className="nav-link transition-all duration-[0.3s] ease-in-out font-montserrat tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[#f41a4a] bg-transparent border-none cursor-pointer"
                     >
                       Home
-                    </a>
+                    </button>
                   </li>
-                 
+
                   <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
-                    <a
-                      className="nav-link transition-all duration-[0.3s] ease-in-out font-montserrat tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[#f41a4a]"
-                      href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#about"
+                    <button
+                      onClick={() => scrollToSection("about")}
+                      className="nav-link transition-all duration-[0.3s] ease-in-out font-montserrat tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[#f41a4a] bg-transparent border-none cursor-pointer"
                     >
                       About
-                    </a>
+                    </button>
                   </li>
+
                   <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
-                    <a
-                      className="nav-link transition-all duration-[0.3s] ease-in-out font-montserrat tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[#f41a4a]"
-                      href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#skill"
-                    >
-                      Skills
-                    </a>
-                  </li>
-                  <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
-                    <a
-                      className="nav-link transition-all duration-[0.3s] ease-in-out font-montserrat tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[#f41a4a]"
-                      href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#project"
+                    <button
+                      onClick={() => scrollToSection("projects")}
+                      className="nav-link transition-all duration-[0.3s] ease-in-out font-montserrat tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[#f41a4a] bg-transparent border-none cursor-pointer"
                     >
                       Projects
-                    </a>
+                    </button>
                   </li>
-                 
                 </ul>
               </div>
             </nav>
