@@ -79,7 +79,7 @@ export default function Projects() {
                         alt="Project 2"
                         width={400}
                         height={300}
-                        className="transition-all duration-[0.5s] ease-in-out w-full group-hover:scale-110"
+                        className="transition-all duration-[0.5s] ease-in-out w-full group-hover:scale-110 "
                       />
                     </Link>
                   </div>

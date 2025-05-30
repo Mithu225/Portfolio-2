@@ -31,18 +31,24 @@ export default function About() {
 
           <div className="max-[1199px]:order-2 min-[1200px]:w-[33.33%] min-[992px]:w-[50%] w-full px-[12px] mb-[30px]">
             <div className="bix-about-contact h-full flex flex-col justify-center">
-              <h5 className="mb-[24px] font-montserrat text-[37px] font-bold text-grey-500 tracking-[0.08rem] opacity-[0.5] leading-[1.2] max-[1399px]:text-[32px] max-[1199px]:text-[28px] max-[575px]:text-[28px] max-[420px]:text-[22px]">
-                "Creativity bleeds from the pen of inspiration."
+              <h5 className="mb-[24px] font-montserrat text-[37px] font-bold text-black opacity-100 tracking-[0.08rem] leading-[1.2] max-[1399px]:text-[32px] max-[1199px]:text-[28px] max-[575px]:text-[28px] max-[420px]:text-[22px]">
+                “Creativity bleeds from the pen of inspiration.”
               </h5>
-              <p className="mb-[16px] font-montserrat text-[14px] text-[#495461] font-normal leading-[26px] tracking-[0.03rem]">
-                Hi, I'm Thu — a passionate App Developer with a love for
-                blending intuitive design and clean code.I believe great apps
-                don't just work well — they feel right. With a background in
-                UI/UX and front-end development, I bring ideas to life through
-                elegant interfaces, seamless user experiences, and a constant
-                drive to innovate. Whether it's crafting a mobile app from
-                scratch or optimizing a product for performance, I thrive at the
-                intersection of creativity and functionality
+              <p className="text-gray-600 mb-4">
+                I&apos;m a passionate frontend developer with a strong
+                foundation in web technologies. I love creating beautiful and
+                functional user interfaces that provide great user experiences.
+              </p>
+              <p className="text-gray-600 mb-4">
+                My journey in web development started with HTML, CSS, and
+                JavaScript, and I&apos;ve since expanded my skills to include
+                modern frameworks and tools. I&apos;m particularly interested in
+                React and Next.js for building dynamic web applications.
+              </p>
+              <p className="text-gray-600">
+                When I&apos;m not coding, you can find me exploring new
+                technologies, contributing to open-source projects, or sharing
+                my knowledge with the developer community.
               </p>
               <div className="about-name">
                 <h6 className="mb-[0] font-montserrat text-[16px] text-[#111a24] font-bold tracking-[0.03rem] leading-[1.2]">
