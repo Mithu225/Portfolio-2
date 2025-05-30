@@ -13,7 +13,10 @@ Built With
 - JavaScript
 - Design applications: Figma
 - Planning applications: GitHub Projects
-- Noroff API`,
+- Noroff API
+
+Self-assessment
+This project helped me deepen my understanding of JavaScript and front-end development. I demonstrated strong use of HTML, JavaScript, and Tailwind CSS to build a responsive interface. I successfully met all technical requirements. For future improvements, I aim to enhance form handling, introduce reusable utilities, and adopt more scalable state management patterns.`,
     imageUrl: "/images/Semester Project - bStorm-project1.png",
     imageCaption: "Semester Project - bStorm",
     githubUrl: "https://github.com/Mithu225/semester-project2-bstorm",
@@ -30,7 +33,10 @@ Built With
 - Next.js
 - Design applications: Figma
 - Planning applications: GitHub Projects
-- Noroff API`,
+- Noroff API
+
+Self-assessment
+This project deepened my understanding of Next.js and TypeScript. I successfully built a responsive, professional web app with server-side rendering and strong type safety. I applied best practices in routing, API handling, and component design. While the core features were implemented effectively, I recognized the need to improve form validation, global error handling, and add loading states for better user experience. In future projects, I plan to explore state management tools and automated testing.`,
     imageUrl: "/images/Javascript Frameworks-project2.png",
     imageCaption: "Javascript Frameworks - Main Interface",
     githubUrl: "https://github.com/Mithu225/zipshop-javascript-frameworks",
@@ -48,7 +54,12 @@ Built With
 - TypeScript
 - Design applications: Figma
 - Planning applications: GitHub Projects
-- Noroff API`,
+- Noroff API
+
+Self-assessment
+This is the last school project, I improved my front-end skills using JavaScript, TypeScript, Next.js, and Tailwind CSS. I built responsive and professional web apps, mastering core concepts like server-side rendering, type safety, routing, and API handling.
+
+I met all technical requirements but saw room for improvement in form validation, error handling, and state management. In future projects, I plan to focus on reusable code, better UX with loading states, and automated testing.`,
     imageUrl: "/images/Project Exam - Holidaze-project3.jpg",
     imageCaption: "Project Exam - Main Interface",
     githubUrl: "https://github.com/Mithu225/Project-Exam-2---holidaze",

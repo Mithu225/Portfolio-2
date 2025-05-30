@@ -39,7 +39,7 @@ export default function ProjectArticle({
           aria-label="Go back"
         >
           <i className="ri-arrow-left-line text-xl"></i>
-          <span className="font-medium">← Back</span>
+          <span className="font-medium">Back</span>
         </Link>
       </div>
 
@@ -83,10 +83,6 @@ export default function ProjectArticle({
               <span className="font-medium">
                 {copySuccess ? "Link Copied!" : "Copy Link"}
               </span>
-            </button>
-            <button className="flex items-center gap-2 px-4 py-2 text-[#495461] hover:text-[#f41a4a] transition-all duration-300 bg-gray-50 rounded-lg hover:bg-gray-100">
-              <i className="ri-share-line text-lg"></i>
-              <span className="font-medium">Share</span>
             </button>
           </div>
         </div>

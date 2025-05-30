@@ -48,7 +48,7 @@ export default function Introduction() {
       <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl mx-auto gap-12 md:gap-20 px-4 py-12">
         <div className="w-[320px] h-[320px] relative overflow-hidden flex-shrink-0 flex items-center justify-center">
           <Image
-            src="/images/thuhuynh1.png"
+            src="/images/thuhuynh1-min.png"
             alt="Thu Huynh"
             fill
             className="object-cover w-full h-full"
@@ -79,9 +79,17 @@ export default function Introduction() {
               href="https://drive.google.com/file/d/1UOxxcMaaJILtmrc-rQVh6Ri2gwoc_3eI/view"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 border-2 border-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition"
+              className="px-6 py-2 border-2 border-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition flex items-center gap-2"
             >
               My CV
+            </a>
+            <a
+              href="https://github.com/Mithu225"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 border-2 border-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition flex items-center gap-2"
+            >
+              GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/mithu225/"
@@ -89,7 +97,7 @@ export default function Introduction() {
               rel="noopener noreferrer"
               className="px-6 py-2 border-2 border-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition flex items-center gap-2"
             >
-              Hire Me <span className="text-lg">↗</span>
+              LinkedIn <i className="ri-linkedin-box-fill text-xl"></i>
             </a>
           </div>
         </div>
