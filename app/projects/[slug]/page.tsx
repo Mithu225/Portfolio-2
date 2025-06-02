@@ -67,7 +67,14 @@ I met all technical requirements but saw room for improvement in form validation
   },
 };
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+type Props = {
+  params: {
+    slug: string;
+  };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default function ProjectPage({ params }: Props) {
   const project = projectData[params.slug as keyof typeof projectData];
 
   if (!project) {
