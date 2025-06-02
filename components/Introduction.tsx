@@ -9,6 +9,28 @@ const typingTexts = [
   "living in Norway",
 ];
 
+const socialLinks = [
+  {
+    href: "https://drive.google.com/file/d/1UOxxcMaaJILtmrc-rQVh6Ri2gwoc_3eI/view",
+    text: "My CV",
+    icon: null,
+  },
+  {
+    href: "https://github.com/Mithu225",
+    text: "GitHub",
+    icon: null,
+  },
+  {
+    href: "https://www.linkedin.com/in/mithu225/",
+    text: "LinkedIn",
+    icon: "ri-linkedin-box-fill",
+  },
+];
+
+// Common button styles
+const buttonStyles =
+  "px-6 py-2 border-2 border-gray-900 rounded-full font-medium transition-all duration-300 hover:bg-gray-900 hover:text-white flex items-center gap-2";
+
 export default function Introduction() {
   const [currentText, setCurrentText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
@@ -41,64 +63,62 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white relative w-full"
+      className="relative w-full bg-white flex items-center min-h-[calc(100vh-100px)] py-[50px] md:py-[40px] sm:py-[35px] justify-center"
     >
       <StarfishClipPath />
 
-      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl mx-auto gap-12 md:gap-20 px-4 py-12">
-        <div className="w-[320px] h-[320px] relative overflow-hidden flex-shrink-0 flex items-center justify-center">
-          <Image
-            src="/images/thuhuynh1-min.png"
-            alt="Thu Huynh"
-            fill
-            className="object-cover w-full h-full"
-            style={{
-              clipPath: "url(#starfish-shape)",
-              transform: "scale(1.2)",
-              transformOrigin: "center",
-            }}
-          />
-        </div>
+      <div className="container mx-auto flex justify-center items-center">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-20">
+          {/* Profile Image */}
+          <div className="relative w-[320px] h-[320px] flex-shrink-0">
+            <Image
+              src="/images/thuhuynh1-min.png"
+              alt="Thu Huynh"
+              fill
+              className="object-cover"
+              style={{
+                clipPath: "url(#starfish-shape)",
+                transform: "scale(1.4)",
+                transformOrigin: "center",
+                borderRadius: "70%",
+                margin: "0 auto",
+                padding: "30px",
+               
+              }}
+            />
+          </div>
 
-        <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-          <span className="text-pink-600 text-2xl font-bold mb-2">
-            Hi, I am
-          </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-4">
-            Thu <span className="block md:inline">Huynh</span>
-          </h1>
-          <p className="text-xl md:text-2xl font-medium text-gray-800 mb-6">
-            I am{" "}
-            <span className="text-pink-600 font-bold min-w-[220px] inline-block">
-              {currentText}
-              <span className="animate-pulse">|</span>
+          {/* Content */}
+          <div className="flex-1 flex flex-col items-center justify-center md:items-start text-center md:text-left">
+            <span className="text-2xl font-bold text-pink-600 mb-2">
+              Hi, I am
             </span>
-          </p>
-          <div className="flex gap-4 mt-4">
-            <a
-              href="https://drive.google.com/file/d/1UOxxcMaaJILtmrc-rQVh6Ri2gwoc_3eI/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2 border-2 border-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition flex items-center gap-2"
-            >
-              My CV
-            </a>
-            <a
-              href="https://github.com/Mithu225"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2 border-2 border-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition flex items-center gap-2"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mithu225/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2 border-2 border-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition flex items-center gap-2"
-            >
-              LinkedIn <i className="ri-linkedin-box-fill text-xl"></i>
-            </a>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-4">
+              Thu <span className="block md:inline">Huynh</span>
+            </h1>
+            <p className="text-xl md:text-2xl font-medium text-gray-800 mb-6">
+              I am{" "}
+              <span className="inline-block min-w-[220px] font-bold text-pink-600">
+                {currentText}
+                <span className="animate-pulse">|</span>
+              </span>
+            </p>
+
+            {/* Social Links */}
+            <div className="flex flex-wrap gap-4 mt-4">
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={buttonStyles}
+                >
+                  {link.text}
+                  {link.icon && <i className={`${link.icon} text-xl`}></i>}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
