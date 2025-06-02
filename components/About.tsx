@@ -64,7 +64,7 @@ export default function About() {
           <div className="max-[1199px]:order-1 min-[1200px]:w-[33.33%] min-[992px]:w-[100%] w-full px-[12px] mb-[30px]">
             <div className="bix-about-img border-[1px] border-solid border-[#111a24] p-[15px] rounded-[200px] relative max-[1199px]:max-w-fit max-[1199px]:m-auto">
               <Image
-                src="/images/thuhuynh2.jpg"
+                src="/images/thuhuynh.jpg"
                 alt="about"
                 width={400}
                 height={400}
