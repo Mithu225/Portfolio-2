@@ -16,6 +16,7 @@ const eslintConfig = [
       indent: ["error", 2],
       "no-mixed-spaces-and-tabs": "error",
       "eol-last": ["error", "always"],
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 ];

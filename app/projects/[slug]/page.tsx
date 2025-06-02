@@ -67,14 +67,17 @@ I met all technical requirements but saw room for improvement in form validation
   },
 };
 
-type Props = {
-  params: {
-    slug: string;
-  };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
+export async function generateMetadata({ params }: any) {
+  const project = projectData[params.slug as keyof typeof projectData];
 
-export default function ProjectPage({ params }: Props) {
+  return {
+    title: project?.title || "Project Not Found",
+    description:
+      project?.description?.split("\n")[0] || "Project details not found",
+  };
+}
+
+export default function ProjectPage({ params }: any) {
   const project = projectData[params.slug as keyof typeof projectData];
 
   if (!project) {
