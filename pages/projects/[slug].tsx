@@ -1,6 +1,6 @@
 import ProjectArticle from "@/components/ProjectArticle";
+import { useRouter } from "next/router";
 
-// This would typically come from a database or CMS
 const projectData = {
   "project-one": {
     title: "Semester Project",
@@ -67,18 +67,10 @@ I met all technical requirements but saw room for improvement in form validation
   },
 };
 
-export async function generateMetadata({ params }: any) {
-  const project = projectData[params.slug as keyof typeof projectData];
-
-  return {
-    title: project?.title || "Project Not Found",
-    description:
-      project?.description?.split("\n")[0] || "Project details not found",
-  };
-}
-
-export default function ProjectPage({ params }: any) {
-  const project = projectData[params.slug as keyof typeof projectData];
+export default function ProjectPage() {
+  const router = useRouter();
+  const { slug } = router.query;
+  const project = projectData[slug as keyof typeof projectData];
 
   if (!project) {
     return <div>Project not found</div>;
