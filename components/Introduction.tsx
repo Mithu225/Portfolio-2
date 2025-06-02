@@ -83,7 +83,6 @@ export default function Introduction() {
                 borderRadius: "70%",
                 margin: "0 auto",
                 padding: "30px",
-               
               }}
             />
           </div>
